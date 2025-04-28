@@ -1,0 +1,325 @@
+<!--task 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Box</title>
+  <style>
+    .basic-box {
+      background-color: lightblue;
+      padding: 15px;
+      border: 3px solid black;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="basic-box">
+    Hello World
+  </div>
+
+</body>
+</html>
+
+<!--task 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Different Paddings</title>
+  <style>
+    .padding-box {
+      background-color: lightgreen;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 40px;
+      border: 2px solid darkgreen;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="padding-box">
+    Hello with different paddings!
+  </div>
+
+</body>
+</html>
+
+<!--task 3-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Margin vs Padding</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px; /* space between boxes */
+    }
+
+    .box1 {
+      background-color: lightcoral;
+      padding: 30px;
+      border: 2px solid red;
+    }
+
+    .box2 {
+      background-color: lightseagreen;
+      margin: 30px;
+      border: 2px solid teal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box1">Box with Padding</div>
+    <div class="box2">Box with Margin</div>
+  </div>
+
+</body>
+</html>
+
+<!--task 4-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Row Alignment</title>
+  <style>
+    .flex-container {
+      display: flex;
+      gap: 20px; /* space between the boxes */
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .flex-box {
+      background-color: skyblue;
+      padding: 30px;
+      border: 2px solid navy;
+      flex: 1; /* optional: make them grow equally */
+      text-align: center;
+    }
+
+    /* Different colors for each box */
+    .box1 { background-color: lightpink; }
+    .box2 { background-color: lightgreen; }
+    .box3 { background-color: lightsalmon; }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="flex-box box1">Box 1</div>
+    <div class="flex-box box2">Box 2</div>
+    <div class="flex-box box3">Box 3</div>
+  </div>
+
+</body>
+</html>
+
+<!--task 6-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+      align-items: center;     /* Center horizontally */
+      gap: 20px;
+      padding: 20px;
+      background-color: #e0e0e0;
+      border: 2px dashed gray;
+    }
+
+    .box {
+      background-color: lightblue;
+      padding: 30px 50px;
+      border: 2px solid navy;
+      text-align: center;
+    }
+
+    .box1 { background-color: lightpink; }
+    .box2 { background-color: lightgreen; }
+    .box3 { background-color: lightsalmon; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+
+</body>
+</html>
+
+<!--task 7-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Gap Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* neat spacing between flex items */
+      padding: 20px;
+      background-color: #e0e0e0;
+      border: 2px dashed gray;
+    }
+
+    .box {
+      background-color: lightblue;
+      padding: 30px 50px;
+      border: 2px solid navy;
+      text-align: center;
+    }
+
+    .box1 { background-color: lightpink; }
+    .box2 { background-color: lightgreen; }
+    .box3 { background-color: lightsalmon; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+
+</body>
+</html>
+
+<!--task 8-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #fafafa;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* allow wrapping */
+      justify-content: center; /* center the items */
+      gap: 20px; /* space between boxes */
+    }
+
+    .box {
+      background-color: lightblue;
+      padding: 40px;
+      border: 2px solid navy;
+      text-align: center;
+      flex: 0 0 150px; /* don't grow, don't shrink, fixed width */
+    }
+
+    .box1 { background-color: lightcoral; }
+    .box2 { background-color: lightgreen; }
+    .box3 { background-color: lightsalmon; }
+    .box4 { background-color: lightseagreen; }
+    .box5 { background-color: lightgoldenrodyellow; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
+    <div class="box box5">Box 5</div>
+  </div>
+
+</body>
+</html>
+
+<!--task 5-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Center Content with Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      gap: 20px;
+      padding: 20px;
+      background-color: #e0e0e0;
+      border: 2px dashed gray;
+    }
+
+    .box {
+      background-color: skyblue;
+      padding: 30px 50px;
+      border: 2px solid navy;
+      text-align: center;
+    }
+
+    .box1 { background-color: lightpink; }
+    .box2 { background-color: lightgreen; }
+    .box3 { background-color: lightsalmon; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+
+</body>
+</html>
