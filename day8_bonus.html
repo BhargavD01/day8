@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Column Layout with Responsive Footer</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            min-height: 80vh; /* Ensure the container takes up enough height */
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 15px;
+            margin: 0 20px;
+        }
+
+        .right-sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Vertical padding */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design for Mobile */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .right-sidebar {
+                width: 100%;
+                margin: 0;
+            }
+
+            .main-content {
+                margin: 0;
+            }
+
+            footer {
+                padding: 15px 0; /* Slightly smaller padding on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Left Sidebar</h3>
+            <p>This is the left sidebar.</p>
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <p>This is the main content area. It takes up the remaining space between the sidebars.</p>
+        </div>
+        <div class="right-sidebar">
+            <h3>Right Sidebar</h3>
+            <p>This is the right sidebar.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
