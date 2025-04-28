@@ -1,0 +1,177 @@
+<!--task 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .profile-info p {
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>John Doe</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--task 2-->
+
+<nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <style>
+    .navbar ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      list-style-type: none;
+    }
+    .navbar li {
+      margin: 10px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  
+    /* Responsive design for small screens */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+
+<!--task 3-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Column Layout</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 15px;
+            margin: 0 20px;
+        }
+
+        .right-sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        /* Responsive Design for Mobile */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .right-sidebar {
+                width: 100%;
+                margin: 0;
+            }
+
+            .main-content {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Left Sidebar</h3>
+            <p>This is the left sidebar.</p>
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <p>This is the main content area. It takes up the remaining space between the sidebars.</p>
+        </div>
+        <div class="right-sidebar">
+            <h3>Right Sidebar</h3>
+            <p>This is the right sidebar.</p>
+        </div>
+    </div>
+
+</body>
+</html>
