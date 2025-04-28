@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        
+        input[type="text"], 
+        input[type="email"], 
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .file-upload {
+            margin-bottom: 15px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            min-height: 100px;
+            margin-bottom: 15px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Full Name:</h1>
+    <p><strong>Input Here</strong></p>
+    
+    <h2>Email:</h2>
+    <p>bhargavdhole@example.com</p>
+    
+    <h2>Phone Number:</h2>
+    <p>123-456-7890</p>
+    
+    <hr>
+    
+    <h3>Gender:</h3>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Male</label>
+        <label><input type="checkbox"> Female</label>
+    </div>
+    
+    <hr>
+    
+    <h3>City:</h3>
+    <select>
+        <option value="New York" selected>New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Houston">Houston</option>
+    </select>
+    
+    <hr>
+    
+    <h3>Subscribe to our newsletter!</h3>
+    
+    <h3>Upload Resume:</h3>
+    <div class="file-upload">
+        <input type="file" id="resume"> <span>No file chosen</span>
+    </div>
+    
+    <hr>
+    
+    <h3>Message:</h3>
+    <textarea placeholder="Write your message here..."></textarea>
+    
+    <input type="submit" value="Submit">
+</body>
+</html>
