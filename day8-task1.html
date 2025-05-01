@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Units Practice</title>
+  <style>
+    /* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Flex container for boxes */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Common box styling */
+.box {
+  background-color: #2ca02c;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Box 1: rem for padding, px for max-width */
+.box-rem-px {
+  padding: 2rem;      /* rem unit */
+  max-width: 200px;   /* px unit */
+}
+
+/* Box 2: vw for width, vh for height */
+.box-vw-vh {
+  width: 30vw;        /* viewport width */
+  height: 20vh;       /* viewport height */
+  padding: 1rem;
+}
+
+/* Box 3: percentage for both width & height */
+.box-percent {
+  width: 20%;         /* percent of parent’s width */
+  height: 150px;      /* a fixed px height so it’s visible */
+  padding: 1rem;
+}
+
+/* Box 4: vmin for both width & height */
+.box-vmin {
+  width: 15vmin;      /* vmin = smaller of vw or vh */
+  height: 25vmin;
+  padding: 1rem;
+}
+
+/* Box 5: em for width and font-size */
+.box-em {
+  width: 15em;        /* relative to font-size of this element */
+  font-size: 1.2em;   /* scales text by em */
+  padding: 1em;
+}
+  </style>
+</head>
+<body>
+  <h1>CSS Units Practice</h1>
+  <div class="boxes">
+    <div class="box box-rem-px">
+      <p>This box uses <strong>rem</strong> for padding and <strong>px</strong> for max-width</p>
+    </div>
+    <div class="box box-vw-vh">
+      <p>This box uses <strong>vw</strong> for width and <strong>vh</strong> for height</p>
+    </div>
+    <div class="box box-percent">
+      <p>This box uses <strong>%</strong> for width and height</p>
+    </div>
+    <div class="box box-vmin">
+      <p>This box uses <strong>vmin</strong> for width and height</p>
+    </div>
+    <div class="box box-em">
+      <p>This box uses <strong>em</strong> for width and font-size</p>
+    </div>
+  </div>
+</body>
+</html>

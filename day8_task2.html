@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Collecting Random Items</title>
+  <style>
+    /* === Global Reset & Base === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* === Header / Intro === */
+  .intro {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .intro p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* === Common Card Styles === */
+  .card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    break-inside: avoid; /* for masonry */
+  }
+  .card img {
+    display: block;
+    max-width: 60px;
+    margin: 0 auto 1rem;
+  }
+  
+  /* === Section 1: Grid === */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+  }
+  
+  /* === Section 2: Masonry === */
+  .masonry-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .cards-masonry {
+    column-count: 3;
+    column-gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+  }
+  .cards-masonry .card {
+    /* ensure each card stays intact in one column */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Intro Header -->
+  <header class="intro">
+    <h1>Collecting Random Items</h1>
+    <p>Discover random items we are collecting today. Who knows what we might find?</p>
+  </header>
+
+  <!-- Section 1: Grid Layout -->
+  <section class="cards-grid">
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/610lAuSZt3L._AC_UY1100_.jpg" alt="Socks">
+      <h3>Socks</h3>
+      <p>The mystery of always losing one sock…</p>
+    </article>
+
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/81fztNdEOcL.jpg" alt="Coffee Cups">
+      <h3>Coffee Cups</h3>
+      <p>Why do we always have 10 half-drunk coffee cups?</p>
+    </article>
+
+    <article class="card">
+      <img src="https://bhukkadcompany.com/wp/wp-content/uploads/2024/06/21-Best-Pizzas-in-Mumbai-You-Must-Try-A-Pizza-Lovers-Paradise-1-710x473.png" alt="Pizza Boxes">
+      <h3>Pizza Boxes</h3>
+      <p>The only thing better than pizza is more pizza.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToyHbQK6rJqXqUCeP_mXRc7xcs1tXcUnIrLw&s" alt="Cookies">
+      <h3>Cookies</h3>
+      <p>Warning: May cause sugar rush and crumbs.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/81lroDEpXkL.jpg" alt="Toys">
+      <h3>Toys</h3>
+      <p>Do these toys ever get used? Who knows.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://plantscapedubai.com/cdn/shop/collections/Buy_Plants_Online_Cheap_Prices.jpg?v=1703681047" alt="Plants">
+      <h3>Plants</h3>
+      <p>They never stop growing, just like your love for them!</p>
+    </article>
+  </section>
+
+  <!-- Section 2: Masonry Layout -->
+  <h2 class="masonry-title">Masonry Layout Mode!</h2>
+  <section class="cards-masonry">
+    <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJ0psGP-1j3GzrysV17HRI0cWfiX6b4L_5Q&s" alt="Laptops">
+      <h3>Laptops</h3>
+      <p>How many laptops can one person have?</p>
+    </article>
+
+    <article class="card">
+      <img src="https://m.media-amazon.com/images/I/31vz6yNQ6+L._SR290,290_.jpg" alt="Phones">
+      <h3>Phones</h3>
+      <p>Who knew they would outlast friendships?</p>
+    </article>
+
+    <article class="card">
+      <img src="https://freshmills.in/cdn/shop/files/bamboo-toothbrush-589621.jpg?v=1717361593&width=1214" alt="Toothbrushes">
+      <h3>Toothbrushes</h3>
+      <p>How many toothbrushes do you really need?</p>
+    </article>
+
+    <article class="card">
+      <img src="https://macmillan-dam.captureweb.co.uk/cdn/macmillan/previews/439664/d2600cec4c0f09bf8e6187a83a066343/0/14665546cf5662d409143d004ffc0c54/131898933.jpg" alt="Books">
+      <h3>Books</h3>
+      <p>A library inside every home.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://sc04.alicdn.com/kf/H2a4665343d4b4e62b8df4aa562abcfafd.jpg" alt="Shoes">
+      <h3>Shoes</h3>
+      <p>Matching shoes? Never.</p>
+    </article>
+
+    <article class="card">
+      <img src="https://images-cdn.ubuy.co.in/65671b7af1a30b0f0c0632a5-babeyond-straw-fedora-hat-for-men-panama.jpg" alt="Hats">
+      <h3>Hats</h3>
+      <p>Just one hat, they said. You don’t need more…</p>
+    </article>
+  </section>
+
+</body>
+</html>
